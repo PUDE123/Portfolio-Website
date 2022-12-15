@@ -1,0 +1,730 @@
+*{
+	box-sizing:border-box;
+}
+html, body{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+ul#navbar{
+  background: rgba(2,2,2, 0.05);
+box-shadow: 0 4px 30px rgba(2,2,2, 0.05);
+backdrop-filter: blur(2.3px);
+-webkit-backdrop-filter: blur(2.3px);
+  padding:1em 5em 1em 5em;
+  margin:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1;
+  display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li#nav-logo img{
+  width:30px;
+  height:30px;
+  
+  
+}
+ul#navbar li#nav-logo{
+  display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:auto;
+}
+ul#navbar li#nav-logo a{
+  margin-left:10px;
+  font-size:20px;
+  font-weight: bold;
+ color:#fff;
+}
+ul#navbar li.nav-menu{ 
+    list-style-type: none;
+    margin-right:3em;
+    display:block;
+   }
+ul#navbar li#nav-logo{
+  list-style-type: none;
+}
+ul#navbar li.nav-menu a{
+  
+    color:#fff;
+    text-decoration: none;
+}
+ul#navbar li.nav-menu a:hover{
+    font-weight: bold;
+}
+ul#navbar a.hire-btn{
+	text-decoration: none;
+ background-color: skyblue;
+  color:white;
+	
+	padding:1em 1.3em;
+	border-radius:50px;
+}
+ul#navbar a.hire-btn:hover, ul#navbar a.hire-btn:focus, ul#navbar a.hire-btn:active{
+ background-color: white ;
+  color: skyblue;
+}
+/*hamburger icon for mobile*/
+ul#navbar span.menu-btn{
+  font-size: 20px;
+  font-weight: bolder;
+  color:white;
+  cursor: pointer;
+  display:none;
+}
+div.sideNav{
+  background-color: white;
+  height:100%;
+position: fixed;
+width:0%;
+top:0;
+z-index:1;
+right:0;
+overflow-x: hidden;
+overflow-y: scroll;
+padding-top:60px;
+transition: all 0.5s ease;
+display:none;
+}
+div.sideNav a{
+  text-decoration: none;
+  padding:8px 8px 8px 40px;
+  color:skyblue;
+  display:block;
+  transition: all 0.3s ease;
+  margin-bottom: 2em;
+  line-height:2em;
+}
+div.sideNav a:hover{
+  background-color:skyblue;
+  color:#fff;
+}
+div.sideNav a.closeBtn{
+  position: absolute;
+  cursor: pointer;
+  top:10px;
+  right:25px;
+  font-size: 20px;
+  margin-left:50px;
+}
+
+/*navbar end*/
+
+/*hero start*/
+div#home{
+ 
+  width:100%;
+  height:auto;
+  background-image:url("images/hero-img.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center;
+}
+div#home-contain{
+	padding:5em 7em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ div#home h1{
+  text-align:left;
+  color:whitesmoke;
+  font-size: 3em;
+   text-shadow: 2px 2px 6px   rgba(0,0,0,0.3);
+  margin:3% auto;
+}
+div#home-contain div.hero-image img{
+	width:100%;
+	height:auto;
+	animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: rotate(10deg);
+    -webkit-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    
+  }
+}
+div#home-contain p{
+  color:#ccc;
+    font-size: 18px;
+  }
+div#home-contain a{
+  margin-top:3%;
+  padding:1em;
+  width:50%;
+   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  
+  text-align: center;
+  border-radius:10px;
+    background-color: white;
+  color:rgb(255,82,82);
+    transition:0.7s ease;
+    text-decoration: none;
+background-color: skyblue;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  font-size:18px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+div#home a:hover, div#home a:focus, div#home a:active{
+	 background-color: white;
+  color:skyblue;
+  
+}
+div#home-contain a img{
+	width:30px;
+	height:30px;
+}
+
+/*hero end*/
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+   SERVICE SECTION
+
+*/
+div#service{
+  
+    padding:2em 5em;
+}
+div.service-contain h4{
+	color:#888;
+}
+div.service-contain h1{
+	
+  color:#000080;
+}
+div.service-box{
+	max-width: 100%;
+	padding:3em;
+	border-radius: 20px;
+	height:auto;
+	margin-right:5em;
+  border:3px solid skyblue;
+ 
+ background: rgba(2,2,2, 0.05);
+box-shadow: 0 4px 30px rgba(2,2,2, 0.05);
+backdrop-filter: blur(2.3px);
+-webkit-backdrop-filter: blur(2.3px);
+transition: all 0.5s ease;
+}
+div.service-box h2{
+  color:#000080;
+  }
+ div.service-box img:hover{
+    cursor:pointer;
+   transform: translate(0, -9px); 
+}
+
+
+div.service-box-container {
+	display: flex;
+	justify-content: center;
+
+}
+
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+   SKILLS SECTION
+
+*/
+div#skills{
+	padding:2em 5em;
+	background-color: rgb(242, 242, 242);
+}
+div.skills-text h4{
+	color:#888;
+}
+div.skills-text h1{
+   color:#000080;
+}
+div.skills-assess-box{
+	background: white;
+	padding:3em;
+
+	margin-top:3em;
+
+}
+div.skills-assess-box div.skills-assess-text{
+	display: flex;
+	justify-content: space-between;
+}
+.progress-bar {
+        height: 24px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: lightblue;
+      }
+
+      .progress-bar > div.html {
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,  lightskyblue, blue );
+        background-size: 100%;
+        transition: width 200ms;
+         animation: progresshtml 5s infinite;
+    }
+      @keyframes progresshtml{
+   0% {
+   width:0%;
+    
+  }
+
+  100% {
+   width:100%;
+  }
+}
+
+      .progress-bar > div.js {
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,  lightskyblue, blue);
+        background-size:  100%;
+        transition: width 200ms;
+         animation: progressjs 5s infinite;
+      }
+       @keyframes progressjs{
+   0% {
+   width:0%;
+    
+  }
+
+  100% {
+   width:70%;
+  }
+}
+
+      .progress-bar > div.vue {
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, lightskyblue, blue);
+        background-size:  100%;
+        transition: width 200ms;
+         animation: progressvue 5s infinite;
+      }
+       @keyframes progressvue{
+   0% {
+   width:0%;
+    
+  }
+
+  100% {
+   width:65%;
+  }
+}
+
+      .progress-bar > div.react {
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, lightskyblue, blue);
+        background-size:  100%;
+        transition: width 200ms;
+      animation: progressreact 5s infinite;
+      }
+       @keyframes progressreact{
+   0% {
+   width:0%;
+    
+  }
+
+  100% {
+   width:60%;
+  }
+}
+
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+   PROJECT SECTION
+
+*/
+
+div#project{
+	padding:2em 5em;
+}
+div#project h1{
+  color:#000080;
+}
+div#project h4{
+	color:#888;
+}
+div.project-box{
+ display: flex;
+ background: whitesmoke;
+ border-bottom: 3px solid #000080;
+  border-top: 3px solid #000080;
+ padding:1em;
+
+ justify-content: center;
+ align-items: center;
+ margin-top: 5em;
+ border-radius: 20px;
+}
+div.project-box img{
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width:100%;
+  height:500px;
+transition: all 0.5s ease;
+}
+ div.project-box img:hover{
+    cursor:pointer;
+   transform: translate(0, -9px); 
+
+}
+div.project-details a{
+  text-decoration: none;
+ background-color: skyblue;
+  color:white;
+  display:block;
+  text-align: center;
+  width:80%;
+  margin-top:1em;
+  padding:1em 1.3em;
+  border-radius:50px;
+}
+div.project-details a:hover, div.project-details a:focus, div.project-details a:active{
+ background-color: white ;
+  color: skyblue;
+}
+div.project-details{
+ 
+	margin-right: 6em;
+}
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+   CONTACT SECTION
+
+*/
+
+div#contact{
+padding:2em 5em;
+background: whitesmoke;
+}
+div#contact h2{
+  text-align: center;
+  color:#000040;
+  margin-bottom: 2em;
+}
+div.contact-contain{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div.contact-contain div.contact-details {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+div.contact-details{
+  margin-left:2em;
+}
+div.contact-details div.text{
+  margin-left:2em;
+}
+ div.contact-icon{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ }
+ div.contact-icon a img{
+ 
+  
+  width:20px;
+  height:20px;
+}
+div.contact-icon a{
+   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+border:2px solid #000040;
+  padding:1em;
+  border-radius: 40%;
+   background: white;
+}
+div.contact-icon a:hover, div.contact-icon a:active{
+   background:  lightskyblue;
+}
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+   FOOTER SECTION
+
+*/
+
+
+footer{
+  padding:1em 5em;
+  background: #000040;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+footer a{
+  color:skyblue;
+  font-weight: bold;
+}
+footer div.copyright-text{
+  margin-right: auto;
+}
+
+
+
+
+/*styles for button at bottom of the page start*/
+.fixedButton{
+            position: fixed;
+            bottom: 0px;
+            right: 0px; 
+            padding: 20px;
+            text-decoration: none;
+        }
+        .roundedFixedBtn{
+          height: 60px;
+          line-height: 80px;  
+          width: 60px;  
+          font-size: 2em;
+          font-weight: bold;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        
+           background-color: skyblue;
+          
+          color: white;
+          box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+          
+          text-align: center;
+        
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .roundedFixedBtn:hover, .roundedFixedBtn:focus, .roundedFicedBtn:active{
+            background-color: white;
+            color: skyblue;
+        }
+/*styles for button at bottom of the page end*/
+
+
+
+
+
+@media (max-width:1100px){
+
+ul#navbar{
+  padding:1em 3em 1em 3em;
+}
+ul#navbar a.hire-btn{
+	display:none;
+}
+ul#navbar span.menu-btn{
+  display:block;
+}
+ul#navbar li.nav-menu{
+  display:none;
+}
+div.sideNav{
+  display:block;
+}
+}
+
+@media (max-width:1024px){
+
+	 div#home h1{
+ 
+  font-size: 2.3em;
+   
+}
+div#home a{
+  width:80%;
+  padding:15px;
+
+}
+div.project-box{
+ flex-direction: column-reverse;
+}
+div.project-details{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0em;
+}
+div.service-box-container {
+  flex-direction: column;
+ 
+}
+div.service-box-container div.service-box{
+  margin-top:2em; 
+  margin-right:0em;
+ 
+}
+
+}
+@media (max-width:900px){
+ div#home-contain{
+ 	flex-direction: column-reverse;
+ }
+ footer{
+ display:block;
+ margin: 0 auto;
+ text-align: center;
+ }
+ footer div.copyright-text{
+  margin-right:0;
+ }
+}
+@media (max-width:768px){
+  div#service{
+    padding:2em;
+  }
+  div#skills{
+    padding:2em;
+  }
+  div#project{
+    padding:2em;
+  }
+  div#contact{
+    padding:2em;
+  }
+  footer{
+    padding:1em;
+  }
+}
+@media (max-width:600px){
+  div#home h1{
+  font-size:2em;
+ }
+ div#home-contain{
+  padding:4em ;
+}
+ div#project{
+    padding:1em;
+  }
+ div#service h1{
+   font-size:23px;
+  }
+  div#skills h1{
+
+    font-size:23px;
+  }
+  div#project h1{
+    font-size:23px;
+  }
+  div.project-box img{
+ 
+  max-width:100%;
+  height:300px;
+
+}
+  div#contact h2{
+   font-size:18px;
+  }
+  }
+
+  @media (max-width:400px){
+    ul#navbar{
+      padding:1em;
+    }
+    div#home h1{
+  font-size:1.5em;
+ }
+  div#home p{
+    font-size:14px;
+  }
+  div#service{
+    padding:1em;
+  }
+  div#skills{
+    padding:1em;
+  }
+  div#project{
+    padding:1em;
+  }
+  
+  div#contact{
+    padding:1em;
+  }
+  }
